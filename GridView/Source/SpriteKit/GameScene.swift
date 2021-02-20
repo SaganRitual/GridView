@@ -36,7 +36,7 @@ class GameScene: SKScene, SKSceneDelegate {
         gameScene = self
 
         gameScene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        gameScene.scaleMode = .aspectFit
+        gameScene.scaleMode = .fill
 
         gridView = GridView(self, grid, self.size * 0.95)
     }

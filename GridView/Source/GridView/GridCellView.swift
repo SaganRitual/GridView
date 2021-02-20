@@ -5,25 +5,28 @@ import SpriteKit
 
 class GridCellViewFactory {
     let backgroundsPool: SpritePool
+    let cellDimensionsPix: CGSize
     let grid: Grid
     let parentNode: SKNode
-    let pixPerCellSide: CGFloat
 
     init(
         grid: Grid, parentNode: SKNode,
         cellDimensionsPix: CGSize, backgroundsPool: SpritePool
     ) {
         self.backgroundsPool = backgroundsPool
+        self.cellDimensionsPix = cellDimensionsPix
         self.grid = grid
         self.parentNode = parentNode
-        self.pixPerCellSide = cellDimensionsPix.width
     }
 
     func makeView(at gridPosition: GridPoint) -> GridCellView {
         let cellBackground = backgroundsPool.makeSprite()
         backgroundsPool.attachSprite(cellBackground, to: parentNode)
 
-        let scenePosition = gridPosition.asPoint() * pixPerCellSide
+        cellBackground.size = cellDimensionsPix * 0.95
+        cellBackground.color = .init(calibratedWhite: 0.2, alpha: 1.0)
+
+        let scenePosition = gridPosition.asPoint() * cellDimensionsPix.asPoint()
 
         return GridCellView(at: scenePosition, cellBackground: cellBackground)
     }
@@ -36,5 +39,6 @@ struct GridCellView {
     init(at scenePosition: CGPoint, cellBackground: SKSpriteNode) {
         self.cellBackground = cellBackground
         self.scenePosition = scenePosition
+        self.cellBackground.position = scenePosition
     }
 }
