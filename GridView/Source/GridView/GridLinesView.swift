@@ -60,7 +60,6 @@ private extension GridLinesView {
         }
 
         for y in yRange {
-            print("yline")
             let line = createGridLine(
                 x: nil, y: y, zRotation: 0, spritePool: linesPool
             )
@@ -81,12 +80,14 @@ private extension GridLinesView {
         line.color = .red
         line.colorBlendFactor = 1
         line.zPosition = 2
-        line.size.width = gridDimensionsPix.width
         line.size.height = 2
+
+        line.size.width = gridDimensionsPix.width
+        if x != nil { line.size.width *= Config.xScaleToSquare }
 
         line.zRotation = zRotation
 
-        let cellDimensionsPix = gridDimensionsPix / grid.size.asSize() * 0.9
+        let cellDimensionsPix = gridDimensionsPix / grid.size.asSize()
 
         // Shift the lines by half a cell in both dimensions so
         // we'll actually outline each cell rather than intersecting

@@ -11,5 +11,5 @@ enum Config {
     static let xScaleToSquare = 1 / aspectRatioOfRobsMacbookPro
 
     static let sceneDimensionsPix =
-        CGSize(width: sceneWidthPix, height: sceneWidthPix)
+        CGSize(width: sceneWidthPix, height: sceneWidthPix * xScaleToSquare)
 }
