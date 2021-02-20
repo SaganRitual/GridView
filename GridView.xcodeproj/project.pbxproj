@@ -28,6 +28,7 @@
 		D404F5CC25E17B9E0061A641 /* SomeGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5CB25E17B9E0061A641 /* SomeGridCell.swift */; };
 		D404F5D825E17DAC0061A641 /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5D725E17DAC0061A641 /* Overload2D.swift */; };
 		D404F5DD25E17E210061A641 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5DC25E17E210061A641 /* GridCellView.swift */; };
+		D404F5E525E1999D0061A641 /* GridLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5E425E1999D0061A641 /* GridLinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D404F5CB25E17B9E0061A641 /* SomeGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeGridCell.swift; sourceTree = "<group>"; };
 		D404F5D725E17DAC0061A641 /* Overload2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Overload2D.swift; path = ../../../Tools/Overload2D.swift; sourceTree = "<group>"; };
 		D404F5DC25E17E210061A641 /* GridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+		D404F5E425E1999D0061A641 /* GridLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLinesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				D404F5C625E17B000061A641 /* GridView.swift */,
 				D404F5DC25E17E210061A641 /* GridCellView.swift */,
+				D404F5E425E1999D0061A641 /* GridLinesView.swift */,
 			);
 			path = GridView;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				D404F5B225E1798F0061A641 /* GridIndexer.swift in Sources */,
 				D404F5C725E17B000061A641 /* GridView.swift in Sources */,
 				D404F5BD25E179F30061A641 /* GameScene.swift in Sources */,
+				D404F5E525E1999D0061A641 /* GridLinesView.swift in Sources */,
 				D404F57225E179370061A641 /* GridViewApp.swift in Sources */,
 				D404F5DD25E17E210061A641 /* GridCellView.swift in Sources */,
 				D404F5BC25E179F30061A641 /* SpritePool.swift in Sources */,

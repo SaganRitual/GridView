@@ -18,8 +18,8 @@ struct GridViewApp: App {
         WindowGroup {
             ContentView()
                 .frame(
-                    width: Config.mainWindowWidth,
-                    height: Config.mainWindowWidth * Config.xScaleToSquare
+                    width: Config.sceneWidthPix,
+                    height: Config.sceneWidthPix * Config.xScaleToSquare
                 )
         }
     }

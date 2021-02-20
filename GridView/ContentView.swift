@@ -4,8 +4,11 @@ import SpriteKit
 import SwiftUI
 
 struct ContentView: View {
+    let gameScene =
+        GameScene(grid, sceneDimensionsPix: Config.sceneDimensionsPix)
+
     var body: some View {
-        SpriteView(scene: GameScene())
+        SpriteView(scene: gameScene)
             .edgesIgnoringSafeArea([.bottom, .leading, .trailing])
             .padding(.trailing, 2)
     }

@@ -23,19 +23,22 @@ protocol GameSceneUpdatableProtocol {
 }
 
 var gameScene: GameScene!
-var updatableViews = [GameSceneUpdatableProtocol]()
 
 class GameScene: SKScene, SKSceneDelegate {
+    private var gridView: GridView!
     private var tickCount = 0
+    private var viewsToUpdate = [GameSceneUpdatableProtocol]()
 
     var readyToRun = false
 
-    override init() {
-        super.init(size: NSScreen.main!.frame.size)
+    init(_ grid: Grid, sceneDimensionsPix: CGSize) {
+        super.init(size: NSScreen.main!.frame.size * 0.5)
         gameScene = self
 
         gameScene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         gameScene.scaleMode = .fill
+
+        gridView = GridView(self, grid, self.size)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -44,7 +47,11 @@ class GameScene: SKScene, SKSceneDelegate {
 }
 
 extension GameScene {
-    func updateViews() { updatableViews.forEach { $0.update() } }
+    func invalidateView(_ view: GameSceneUpdatableProtocol) {
+        viewsToUpdate.append(view)
+    }
+
+    func updateViews() { viewsToUpdate.forEach { $0.update() } }
 }
 
 extension GameScene {
