@@ -9,7 +9,4 @@ enum Config {
     static let sceneWidthPix: CGFloat = 800
     static let showGridLInes = true
     static let xScaleToSquare = 1 / aspectRatioOfRobsMacbookPro
-
-    static let sceneDimensionsPix =
-        CGSize(width: sceneWidthPix, height: sceneWidthPix * xScaleToSquare)
 }

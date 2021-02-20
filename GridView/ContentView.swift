@@ -4,8 +4,7 @@ import SpriteKit
 import SwiftUI
 
 struct ContentView: View {
-    let gameScene =
-        GameScene(grid, sceneDimensionsPix: Config.sceneDimensionsPix)
+    let gameScene = GameScene(grid)
 
     var body: some View {
         SpriteView(scene: gameScene)

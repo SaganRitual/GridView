@@ -17,10 +17,6 @@ struct GridViewApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .frame(
-                    width: Config.sceneDimensionsPix.width,
-                    height: Config.sceneDimensionsPix.height
-                )
         }
     }
 }

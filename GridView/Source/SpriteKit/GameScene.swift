@@ -31,14 +31,14 @@ class GameScene: SKScene, SKSceneDelegate {
 
     var readyToRun = false
 
-    init(_ grid: Grid, sceneDimensionsPix: CGSize) {
+    init(_ grid: Grid) {
         super.init(size: NSScreen.main!.frame.size)
         gameScene = self
 
         gameScene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        gameScene.scaleMode = .fill
+        gameScene.scaleMode = .aspectFit
 
-        gridView = GridView(self, grid, sceneDimensionsPix)
+        gridView = GridView(self, grid, self.size * 0.95)
     }
 
     required init?(coder aDecoder: NSCoder) {

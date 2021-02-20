@@ -54,8 +54,6 @@ private extension GridLinesView {
                 x: x, y: nil, zRotation: .pi / 2, spritePool: linesPool
             )
 
-            line.color = .green
-
             horizontalLines.append(line)
         }
 
@@ -63,8 +61,6 @@ private extension GridLinesView {
             let line = createGridLine(
                 x: nil, y: y, zRotation: 0, spritePool: linesPool
             )
-
-            line.color = .orange
 
             verticalLines.append(line)
         }
@@ -77,7 +73,7 @@ private extension GridLinesView {
         zRotation: CGFloat, spritePool: SpritePool
     ) -> SKSpriteNode {
         let line = spritePool.makeSprite()
-        line.color = .red
+        line.color = .gray
         line.colorBlendFactor = 1
         line.zPosition = 2
         line.size.height = 2
