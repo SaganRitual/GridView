@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D404F57225E179370061A641 /* GridViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F57125E179370061A641 /* GridViewApp.swift */; };
+		D404F57425E179370061A641 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F57325E179370061A641 /* ContentView.swift */; };
+		D404F57625E179390061A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D404F57525E179390061A641 /* Assets.xcassets */; };
+		D404F57925E179390061A641 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D404F57825E179390061A641 /* Preview Assets.xcassets */; };
+		D404F58525E179390061A641 /* GridViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F58425E179390061A641 /* GridViewTests.swift */; };
+		D404F59025E179390061A641 /* GridViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F58F25E179390061A641 /* GridViewUITests.swift */; };
+		D404F5A425E179630061A641 /* swiftlint.sh in Resources */ = {isa = PBXBuildFile; fileRef = D404F5A125E179630061A641 /* swiftlint.sh */; };
+		D404F5A525E179630061A641 /* .overcommit.yml in Resources */ = {isa = PBXBuildFile; fileRef = D404F5A225E179630061A641 /* .overcommit.yml */; };
+		D404F5A625E179630061A641 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D404F5A325E179630061A641 /* .swiftlint.yml */; };
+		D404F5B025E1798F0061A641 /* GridPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5AB25E1798F0061A641 /* GridPoint.swift */; };
+		D404F5B125E1798F0061A641 /* GridNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5AC25E1798F0061A641 /* GridNavigator.swift */; };
+		D404F5B225E1798F0061A641 /* GridIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5AD25E1798F0061A641 /* GridIndexer.swift */; };
+		D404F5B325E1798F0061A641 /* GridCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5AE25E1798F0061A641 /* GridCellLayout.swift */; };
+		D404F5B425E1798F0061A641 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5AF25E1798F0061A641 /* Grid.swift */; };
+		D404F5BC25E179F30061A641 /* SpritePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5BA25E179F30061A641 /* SpritePool.swift */; };
+		D404F5BD25E179F30061A641 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5BB25E179F30061A641 /* GameScene.swift */; };
+		D404F5C225E17A2D0061A641 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5C125E17A2D0061A641 /* Config.swift */; };
+		D404F5C725E17B000061A641 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5C625E17B000061A641 /* GridView.swift */; };
+		D404F5CC25E17B9E0061A641 /* SomeGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5CB25E17B9E0061A641 /* SomeGridCell.swift */; };
+		D404F5D825E17DAC0061A641 /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5D725E17DAC0061A641 /* Overload2D.swift */; };
+		D404F5DD25E17E210061A641 /* GridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404F5DC25E17E210061A641 /* GridCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D404F58125E179390061A641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D404F56625E179370061A641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D404F56D25E179370061A641;
+			remoteInfo = GridView;
+		};
+		D404F58C25E179390061A641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D404F56625E179370061A641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D404F56D25E179370061A641;
+			remoteInfo = GridView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D404F56E25E179370061A641 /* GridView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404F57125E179370061A641 /* GridViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewApp.swift; sourceTree = "<group>"; };
+		D404F57325E179370061A641 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D404F57525E179390061A641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D404F57825E179390061A641 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D404F57A25E179390061A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D404F57B25E179390061A641 /* GridView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridView.entitlements; sourceTree = "<group>"; };
+		D404F58025E179390061A641 /* GridViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404F58425E179390061A641 /* GridViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewTests.swift; sourceTree = "<group>"; };
+		D404F58625E179390061A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D404F58B25E179390061A641 /* GridViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D404F58F25E179390061A641 /* GridViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewUITests.swift; sourceTree = "<group>"; };
+		D404F59125E179390061A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D404F5A125E179630061A641 /* swiftlint.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = swiftlint.sh; sourceTree = "<group>"; };
+		D404F5A225E179630061A641 /* .overcommit.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .overcommit.yml; sourceTree = "<group>"; };
+		D404F5A325E179630061A641 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D404F5AB25E1798F0061A641 /* GridPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridPoint.swift; path = ../../../Grid/Source/GridPoint.swift; sourceTree = "<group>"; };
+		D404F5AC25E1798F0061A641 /* GridNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridNavigator.swift; path = ../../../Grid/Source/GridNavigator.swift; sourceTree = "<group>"; };
+		D404F5AD25E1798F0061A641 /* GridIndexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridIndexer.swift; path = ../../../Grid/Source/GridIndexer.swift; sourceTree = "<group>"; };
+		D404F5AE25E1798F0061A641 /* GridCellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridCellLayout.swift; path = ../../../Grid/Source/GridCellLayout.swift; sourceTree = "<group>"; };
+		D404F5AF25E1798F0061A641 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = ../../../Grid/Source/Grid.swift; sourceTree = "<group>"; };
+		D404F5BA25E179F30061A641 /* SpritePool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpritePool.swift; sourceTree = "<group>"; };
+		D404F5BB25E179F30061A641 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D404F5C125E17A2D0061A641 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D404F5C625E17B000061A641 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		D404F5CB25E17B9E0061A641 /* SomeGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeGridCell.swift; sourceTree = "<group>"; };
+		D404F5D725E17DAC0061A641 /* Overload2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Overload2D.swift; path = ../../../Tools/Overload2D.swift; sourceTree = "<group>"; };
+		D404F5DC25E17E210061A641 /* GridCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D404F56B25E179370061A641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F57D25E179390061A641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F58825E179390061A641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D404F56525E179370061A641 = {
+			isa = PBXGroup;
+			children = (
+				D404F5A225E179630061A641 /* .overcommit.yml */,
+				D404F5A325E179630061A641 /* .swiftlint.yml */,
+				D404F5A125E179630061A641 /* swiftlint.sh */,
+				D404F57025E179370061A641 /* GridView */,
+				D404F58325E179390061A641 /* GridViewTests */,
+				D404F58E25E179390061A641 /* GridViewUITests */,
+				D404F56F25E179370061A641 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D404F56F25E179370061A641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D404F56E25E179370061A641 /* GridView.app */,
+				D404F58025E179390061A641 /* GridViewTests.xctest */,
+				D404F58B25E179390061A641 /* GridViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D404F57025E179370061A641 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5A025E1794B0061A641 /* Source */,
+				D404F57125E179370061A641 /* GridViewApp.swift */,
+				D404F57325E179370061A641 /* ContentView.swift */,
+				D404F57525E179390061A641 /* Assets.xcassets */,
+				D404F57A25E179390061A641 /* Info.plist */,
+				D404F57B25E179390061A641 /* GridView.entitlements */,
+				D404F57725E179390061A641 /* Preview Content */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		D404F57725E179390061A641 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D404F57825E179390061A641 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D404F58325E179390061A641 /* GridViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D404F58425E179390061A641 /* GridViewTests.swift */,
+				D404F58625E179390061A641 /* Info.plist */,
+			);
+			path = GridViewTests;
+			sourceTree = "<group>";
+		};
+		D404F58E25E179390061A641 /* GridViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D404F58F25E179390061A641 /* GridViewUITests.swift */,
+				D404F59125E179390061A641 /* Info.plist */,
+			);
+			path = GridViewUITests;
+			sourceTree = "<group>";
+		};
+		D404F5A025E1794B0061A641 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5C125E17A2D0061A641 /* Config.swift */,
+				D404F5CB25E17B9E0061A641 /* SomeGridCell.swift */,
+				D404F5AA25E179760061A641 /* Grid */,
+				D404F5B825E179C60061A641 /* GridView */,
+				D404F5B925E179D60061A641 /* SpriteKit */,
+				D404F5D625E17D970061A641 /* Tools */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D404F5AA25E179760061A641 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5AF25E1798F0061A641 /* Grid.swift */,
+				D404F5AE25E1798F0061A641 /* GridCellLayout.swift */,
+				D404F5AD25E1798F0061A641 /* GridIndexer.swift */,
+				D404F5AC25E1798F0061A641 /* GridNavigator.swift */,
+				D404F5AB25E1798F0061A641 /* GridPoint.swift */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
+		D404F5B825E179C60061A641 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5C625E17B000061A641 /* GridView.swift */,
+				D404F5DC25E17E210061A641 /* GridCellView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		D404F5B925E179D60061A641 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5BB25E179F30061A641 /* GameScene.swift */,
+				D404F5BA25E179F30061A641 /* SpritePool.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		D404F5D625E17D970061A641 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D404F5D725E17DAC0061A641 /* Overload2D.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D404F56D25E179370061A641 /* GridView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404F59425E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridView" */;
+			buildPhases = (
+				D404F56A25E179370061A641 /* Sources */,
+				D404F56B25E179370061A641 /* Frameworks */,
+				D404F56C25E179370061A641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GridView;
+			productName = GridView;
+			productReference = D404F56E25E179370061A641 /* GridView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D404F57F25E179390061A641 /* GridViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404F59725E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridViewTests" */;
+			buildPhases = (
+				D404F57C25E179390061A641 /* Sources */,
+				D404F57D25E179390061A641 /* Frameworks */,
+				D404F57E25E179390061A641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D404F58225E179390061A641 /* PBXTargetDependency */,
+			);
+			name = GridViewTests;
+			productName = GridViewTests;
+			productReference = D404F58025E179390061A641 /* GridViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D404F58A25E179390061A641 /* GridViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D404F59A25E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridViewUITests" */;
+			buildPhases = (
+				D404F58725E179390061A641 /* Sources */,
+				D404F58825E179390061A641 /* Frameworks */,
+				D404F58925E179390061A641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D404F58D25E179390061A641 /* PBXTargetDependency */,
+			);
+			name = GridViewUITests;
+			productName = GridViewUITests;
+			productReference = D404F58B25E179390061A641 /* GridViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D404F56625E179370061A641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D404F56D25E179370061A641 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D404F57F25E179390061A641 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D404F56D25E179370061A641;
+					};
+					D404F58A25E179390061A641 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D404F56D25E179370061A641;
+					};
+				};
+			};
+			buildConfigurationList = D404F56925E179370061A641 /* Build configuration list for PBXProject "GridView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D404F56525E179370061A641;
+			productRefGroup = D404F56F25E179370061A641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D404F56D25E179370061A641 /* GridView */,
+				D404F57F25E179390061A641 /* GridViewTests */,
+				D404F58A25E179390061A641 /* GridViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D404F56C25E179370061A641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404F5A625E179630061A641 /* .swiftlint.yml in Resources */,
+				D404F57925E179390061A641 /* Preview Assets.xcassets in Resources */,
+				D404F5A425E179630061A641 /* swiftlint.sh in Resources */,
+				D404F5A525E179630061A641 /* .overcommit.yml in Resources */,
+				D404F57625E179390061A641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F57E25E179390061A641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F58925E179390061A641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D404F56A25E179370061A641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404F5B025E1798F0061A641 /* GridPoint.swift in Sources */,
+				D404F57425E179370061A641 /* ContentView.swift in Sources */,
+				D404F5B225E1798F0061A641 /* GridIndexer.swift in Sources */,
+				D404F5C725E17B000061A641 /* GridView.swift in Sources */,
+				D404F5BD25E179F30061A641 /* GameScene.swift in Sources */,
+				D404F57225E179370061A641 /* GridViewApp.swift in Sources */,
+				D404F5DD25E17E210061A641 /* GridCellView.swift in Sources */,
+				D404F5BC25E179F30061A641 /* SpritePool.swift in Sources */,
+				D404F5CC25E17B9E0061A641 /* SomeGridCell.swift in Sources */,
+				D404F5B125E1798F0061A641 /* GridNavigator.swift in Sources */,
+				D404F5C225E17A2D0061A641 /* Config.swift in Sources */,
+				D404F5B425E1798F0061A641 /* Grid.swift in Sources */,
+				D404F5D825E17DAC0061A641 /* Overload2D.swift in Sources */,
+				D404F5B325E1798F0061A641 /* GridCellLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F57C25E179390061A641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404F58525E179390061A641 /* GridViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D404F58725E179390061A641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D404F59025E179390061A641 /* GridViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D404F58225E179390061A641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D404F56D25E179370061A641 /* GridView */;
+			targetProxy = D404F58125E179390061A641 /* PBXContainerItemProxy */;
+		};
+		D404F58D25E179390061A641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D404F56D25E179370061A641 /* GridView */;
+			targetProxy = D404F58C25E179390061A641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D404F59225E1793A0061A641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D404F59325E1793A0061A641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D404F59525E1793A0061A641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GridView/GridView.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"GridView/Preview Content\"";
+				DEVELOPMENT_TEAM = DD983V4X84;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GridView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D404F59625E1793A0061A641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GridView/GridView.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"GridView/Preview Content\"";
+				DEVELOPMENT_TEAM = DD983V4X84;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GridView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D404F59825E1793A0061A641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = GridViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GridView.app/Contents/MacOS/GridView";
+			};
+			name = Debug;
+		};
+		D404F59925E1793A0061A641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = GridViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GridView.app/Contents/MacOS/GridView";
+			};
+			name = Release;
+		};
+		D404F59B25E1793A0061A641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = GridViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GridView;
+			};
+			name = Debug;
+		};
+		D404F59C25E1793A0061A641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = GridViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.GridViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = GridView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D404F56925E179370061A641 /* Build configuration list for PBXProject "GridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404F59225E1793A0061A641 /* Debug */,
+				D404F59325E1793A0061A641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404F59425E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404F59525E1793A0061A641 /* Debug */,
+				D404F59625E1793A0061A641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404F59725E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404F59825E1793A0061A641 /* Debug */,
+				D404F59925E1793A0061A641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D404F59A25E1793A0061A641 /* Build configuration list for PBXNativeTarget "GridViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D404F59B25E1793A0061A641 /* Debug */,
+				D404F59C25E1793A0061A641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D404F56625E179370061A641 /* Project object */;
+}
